@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Archery API Documentation" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Archery API</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="navbar-title m-0 p-0">
+        <h3 class="text-center text-white p-4 m-0">archery-api.now.sh</h3>
+      </div>
+      <div class="navbar-subtitle m-0 p-0">
+        <h4 class="text-center p-3 m-0">Archery API</h4>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="subtitle">Overview</h2>
+          <p class="lead">
+            Archery APi is an api for providing articles and videos links about
+            archery.
+          </p>
+        </div>
+        <div class="table-responsive col-md-8">
+          <table class="table table-bordered border-primary">
+            <tbody>
+              <tr>
+                <td>API URL</td>
+                <td>https://archery-api.now.sh/api/</td>
+              </tr>
+              <tr>
+                <td>API Version</td>
+                <td>1.0</td>
+              </tr>
+              <tr>
+                <td>Request Method</td>
+                <td>GET</td>
+              </tr>
+              <tr>
+                <td>Response Format</td>
+                <td>JSON</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h2 class="subtitle">Articles</h2>
+          <p class="lead">
+            Request Archery articles. Each article comes with:
+          </p>
+          <ul class="list-unstyled lead">
+            <li>The <span class="api-key">title</span> of the article,</li>
+            <li>A <span class="api-key">link</span> to the article page,</li>
+            <li>
+              An <span class="api-key">image</span> to show a preview of the
+              article,
+            </li>
+            <li>The <span class="api-key">source</span> of the article.</li>
+          </ul>
+          <h4>Request:</h4>
+          <p class="request-url text-white p-2 border rounded">
+            /archery/articles
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>Response:</p>
+          <pre class="json">
+[
+  {
+    "title": "HOW TO BUY YOUR 1ST RECURVE BOW",
+    "link": "https://worldarchery.org/news/147465/archery-101-how-buy-your-1st-recurve-bow",
+    "img": "https://archery-api.now.sh/img/articles/recurve_bow.jpg",
+    "source": "World Archery"
+  },
+  {
+    "title": "HOW TO APPLY ARROW WRAPS",
+    "link": "https://worldarchery.org/news/147881/archery-101-how-apply-arrow-wraps",
+    "img": "https://archery-api.now.sh/img/articles/arrow_wraps.jpg",
+    "source": "World Archery"
+  },
+  {
+    "title": "HOW TO PUT POINTS IN ARROWS",
+    "link": "https://worldarchery.org/news/146283/archery-101-how-put-points-arrows",
+    "img": "https://archery-api.now.sh/img/articles/arrow_points.jpg",
+    "source": "World Archery"
+  },
+  ...
+]
+</pre
+          >
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h2 class="subtitle">Videos</h2>
+          <p class="lead">
+            Request youtube Archery videos. Each video comes with:
+          </p>
+          <ul class="list-unstyled lead">
+            <li>The <span class="api-key">id</span> of the video,</li>
+            <li>The <span class="api-key">title</span> of the video,</li>
+            <li>The video <span class="api-key">thumbnail</span>,</li>
+            <li>The <span class="api-key">source</span> of the video.</li>
+          </ul>
+          <h4>Request:</h4>
+          <p class="request-url text-white p-2 border rounded">
+            /archery/videos
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>Response:</p>
+          <pre class="json">
+[
+  {
+    "id": "wyFvtExiEvg",
+    "title": "A BEGINNER’S GUIDE TO COMPOUND ARCHERY",
+    "thumbnail": "https://i3.ytimg.com/vi/wyFvtExiEvg/hqdefault.jpg",
+    "source": "World Archery"
+  },
+  {
+    "id": "FR_tmXjJ4p4",
+    "title": "A BEGINNER’S GUIDE TO RECURVE ARCHERY",
+    "thumbnail": "https://i3.ytimg.com/vi/FR_tmXjJ4p4/hqdefault.jpg",
+    "source": "World Archery"
+  },
+  {
+    "id": "2T-Sb8Q-fvw",
+    "title": "HOW TO ASSEMBLE A RECURVE BOW",
+    "thumbnail": "https://i3.ytimg.com/vi/2T-Sb8Q-fvw/hqdefault.jpg",
+    "source": "World Archery"
+  },
+  ...
+]          
+</pre
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

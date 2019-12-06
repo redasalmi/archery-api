@@ -1,0 +1,27 @@
+.navbar-title {
+  background-color: rgb(19, 75, 114);
+}
+
+.navbar-subtitle {
+  background-color: rgb(238, 238, 238);
+}
+
+.navbar-subtitle > h4,
+.subtitle,
+.api-key {
+  color: #b2395b;
+}
+
+.api-key {
+  font-weight: bold;
+}
+
+.request-url {
+  background-color: #134b72;
+}
+
+.json {
+  background: #eee;
+  color: #000;
+  font-size: 14px;
+}
