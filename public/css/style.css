@@ -8,12 +8,18 @@
 
 .navbar-subtitle > h4,
 .subtitle,
-.api-key {
+.api-key,
+.link {
   color: #b2395b;
 }
 
-.api-key {
+.api-key,
+.link {
   font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 .request-url {
